@@ -1,9 +1,16 @@
 package com.carriel.souleyman.Model.HomeShop;
 
-public class Produit {
+public class Product {
     private String name;
     private String description;
     private double prix;
+
+    public Product(String pName, String pDescription, double pPrix){
+        this.setName(pName);
+        this.setDescription(pDescription);
+        this.setPrix(pPrix);
+        System.out.println("produit créé "+name+", "+description+", "+prix);
+    }
 
     /**
      * Voir déscription facture

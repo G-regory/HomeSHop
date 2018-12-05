@@ -1,26 +1,33 @@
 package com.carriel.souleyman.Model.HomeShop;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Bill {
-    private String client;
-    private String produit;
+    private Custumer custumer;
+   private Map<Product, Integer> products;
 
-    public void facture(){
-
+    public Bill(Custumer pCustumer){
+        this.custumer=pCustumer;
+        System.out.println("facture créé "+custumer.getFullname()+", "+custumer.getAdresse());
     }
 
-    public String getClient() {
-        return client;
+    /**
+     * add product et quantity to the bill
+     * @param product produit ajouter
+     * @param quantity  quiantite ajouter
+     */
+    public void addProduct(Product product, Integer quantity){
+            this.products.put(product,quantity);
     }
 
-    public void setClient(String client) {
-        this.client = client;
+    public Custumer getCustumer() {
+        return custumer;
     }
 
-    public String getProduit() {
-        return produit;
+
+    public Map<Product, Integer> getProducts() {
+        return products;
     }
 
-    public void setProduit(String produit) {
-        this.produit = produit;
-    }
 }
