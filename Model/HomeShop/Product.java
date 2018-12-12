@@ -9,15 +9,13 @@ public class Product {
         this.setName(pName);
         this.setDescription(pDescription);
         this.setPrix(pPrix);
-        System.out.println("produit créé "+name+", "+description+", "+prix);
+//        System.out.println("produit créé "+name+", "+description+", "+prix);
     }
 
     /**
      * Voir déscription facture
      */
     public void look(){
-
-
     }
 
     /**
@@ -26,7 +24,6 @@ public class Product {
      * @param quantity quantité ajouté
      */
     public void buy(Bill bille, Integer quantity){
-
     }
 
     public String getName() {
