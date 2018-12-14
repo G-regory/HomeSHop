@@ -2,7 +2,7 @@ package com.carriel.souleyman.Model.Miam;
 
 import com.carriel.souleyman.Model.Miam.Aliment;
 
-public class Four {
+public class Four implements Cuisine{
     private int capacity;
     private int puissance;
 
@@ -32,4 +32,10 @@ public class Four {
     public void setPuissance(int puissance) {
         this.puissance = puissance;
     }
+
+    @Override
+    public void faireCuire(String repas) {
+        System.out.println("Je vais mettre mon "+repas+ " au four");
+    }
+
 }

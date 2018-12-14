@@ -9,7 +9,6 @@ public class Product {
         this.setName(pName);
         this.setDescription(pDescription);
         this.setPrix(pPrix);
-//        System.out.println("produit créé "+name+", "+description+", "+prix);
     }
 
     /**

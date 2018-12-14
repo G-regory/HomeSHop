@@ -5,11 +5,16 @@ import java.util.Map;
 
 public class Bill {
     private Custumer custumer;
+    private Livraison livraison;
    private Map<Product, Integer> products= new HashMap<>();
+
+    public Bill(Custumer custumer, Livraison livraison) {
+        this.custumer = custumer;
+        this.livraison = livraison;
+    }
 
     public Bill(Custumer pCustumer){
         this.custumer=pCustumer;
-//        System.out.println("facture créé "+custumer.getFullname()+", "+custumer.getAdresse());
     }
 
     /**
@@ -25,6 +30,9 @@ public class Bill {
         return custumer;
     }
 
+    public Livraison getLivraison() {
+        return livraison;
+    }
 
     public Map<Product, Integer> getProducts() {
         return products;
