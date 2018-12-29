@@ -12,6 +12,11 @@ public class ExpressDelivery implements Livraison {
         return 9.99;
     }
 
+    @Override
+    public String getInfo() {
+        return "Livraison Express à domicile "+getPrice();
+    }
+
     public ExpressDelivery(String expressDelivery) {
         this.expressDelivery = expressDelivery;
     }

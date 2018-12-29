@@ -24,7 +24,7 @@ public class Aliment {
         return estCuit;
     }
 
-    public void setEstCuit(boolean estCuit) {
+    public void setIsCuit(boolean estCuit) {
         this.estCuit = estCuit;
     }
 }

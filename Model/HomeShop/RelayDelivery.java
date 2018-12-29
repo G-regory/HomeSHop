@@ -13,6 +13,11 @@ public class RelayDelivery implements Livraison {
         return 4.99;
     }
 
+    @Override
+    public String getInfo() {
+        return "Livraison point relai "+getPrice();
+    }
+
     public RelayDelivery(int relayDelivery) {
         this.relayDelivery = relayDelivery;
     }
